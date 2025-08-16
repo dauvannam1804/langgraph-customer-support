@@ -1,0 +1,57 @@
+[
+    {
+        "category": "Laptop",
+        "products": [
+            {"name": "Dell XPS 13", "price": 2500, "description": "High-end, lightweight laptop"},
+            {"name": "MacBook Air M2", "price": 2700, "description": "High-performance Apple M2 chip laptop"},
+            {"name": "Asus ZenBook", "price": 1800, "description": "Office laptop with long battery life"},
+            {"name": "HP Spectre x360", "price": 2200, "description": "360-degree foldable laptop with touch screen"},
+            {"name": "Lenovo ThinkPad X1", "price": 2100, "description": "Durable business laptop"},
+            {"name": "Acer Swift 3", "price": 1200, "description": "Affordable laptop with stable performance"}
+        ]
+    },
+    {
+        "category": "Smartphone",
+        "products": [
+            {"name": "iPhone 15 Pro", "price": 3000, "description": "The latest Apple phone"},
+            {"name": "Samsung Galaxy S24", "price": 2800, "description": "Powerful Android flagship"},
+            {"name": "Xiaomi 13 Ultra", "price": 2000, "description": "Excellent camera"},
+            {"name": "Oppo Find X6", "price": 1900, "description": "Curved screen phone"},
+            {"name": "Vivo X90 Pro", "price": 1850, "description": "Good performance and camera"},
+            {"name": "Google Pixel 8", "price": 2500, "description": "Beautiful photos, smart AI"}
+        ]
+    },
+    {
+        "category": "Tablet",
+        "products": [
+            {"name": "iPad Pro 12.9", "price": 2800, "description": "High-end Apple tablet"},
+            {"name": "Samsung Galaxy Tab S9", "price": 2200, "description": "Powerful Android tablet"},
+            {"name": "Xiaomi Pad 6", "price": 900, "description": "Affordable tablet"},
+            {"name": "Lenovo Tab P12", "price": 800, "description": "Tablet for entertainment"},
+            {"name": "Huawei MatePad Pro", "price": 1500, "description": "OLED screen tablet"},
+            {"name": "Amazon Fire HD 10", "price": 500, "description": "Affordable tablet for reading"}
+        ]
+    },
+    {
+        "category": "Smartwatch",
+        "products": [
+            {"name": "Apple Watch Ultra 2", "price": 1200, "description": "Durable sports watch"},
+            {"name": "Samsung Galaxy Watch 6", "price": 900, "description": "Android smartwatch"},
+            {"name": "Garmin Fenix 7", "price": 1500, "description": "GPS sports watch"},
+            {"name": "Huawei Watch GT 4", "price": 600, "description": "Long battery life, beautiful design"},
+            {"name": "Xiaomi Watch S1", "price": 400, "description": "Affordable watch"},
+            {"name": "Fitbit Versa 4", "price": 350, "description": "Good health tracking"}
+        ]
+    },
+    {
+        "category": "Accessory",
+        "products": [
+            {"name": "AirPods Pro 2", "price": 500, "description": "Apple noise-canceling earbuds"},
+            {"name": "Sony WH-1000XM5", "price": 800, "description": "Best noise-canceling headphones"},
+            {"name": "Logitech MX Master 3", "price": 250, "description": "High-end wireless mouse"},
+            {"name": "Keychron K2", "price": 150, "description": "Compact mechanical keyboard"},
+            {"name": "Anker PowerCore 20000", "price": 100, "description": "Portable power bank"},
+            {"name": "Samsung T7 SSD 1TB", "price": 300, "description": "High-speed portable SSD"}
+        ]
+    }
+]
