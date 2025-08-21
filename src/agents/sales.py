@@ -1,13 +1,15 @@
-import os
 import asyncio
+import os
+
 from dotenv import load_dotenv
+from langchain_core.messages import convert_to_messages
 from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_mcp_adapters.tools import load_mcp_tools
 from langgraph.prebuilt import create_react_agent
-from src.utils import load_prompt
 
 from mcp import ClientSession, StdioServerParameters
 from mcp.client.stdio import stdio_client
-from langchain_mcp_adapters.tools import load_mcp_tools
+from src.utils import load_prompt
 
 load_dotenv()
 gemini_api_key = os.getenv("GEMINI_API_KEY")
@@ -17,12 +19,11 @@ llm = ChatGoogleGenerativeAI(
     google_api_key=gemini_api_key,
 )
 
+
 server_params = StdioServerParameters(
     command="python",
     args=["src/mcp/tools_server.py"],  # Đường dẫn tuyệt đối nếu cần
 )
-
-from langchain_core.messages import convert_to_messages
 
 
 def pretty_print_message(message, indent=False):
@@ -64,6 +65,7 @@ def pretty_print_messages(update, last_message=False):
             pretty_print_message(m, indent=is_subgraph)
         print("\n")
 
+
 async def main():
     async with stdio_client(server_params) as (read, write):
         async with ClientSession(read, write) as session:
@@ -80,8 +82,9 @@ async def main():
                 {"messages": [{"role": "user", "content": "i want to buy laptop"}]}
             )
             # print(response)
-            for m in response['messages']:
+            for m in response["messages"]:
                 m.pretty_print()
+
 
 if __name__ == "__main__":
     asyncio.run(main())
